@@ -9,15 +9,22 @@
     <title>AdminLoginForm</title>
 </head>
 <body>
-  <form action="./home.html" class="box" method="GET" id="form">
-      <h1>
-          Admin-login
-      </h1>
-      <input type="text" name="" placeholder="Enter Username" id="username" required pattern="admin">
-      <!-- <span role="alert" id="nameError" aria-hidden="true"> Enter specified userid.</span> -->
-      <input type="password" name="" placeholder="password" id="password" required pattern="12345">
-      <!-- <span role="alert" id="nameError" aria-hidden="true"> Enter specified userid.</span> -->
-      <input type="submit" name="" value="login" onclick="validate()">
-  </form>  
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <form action="./home.html" class="box" method="GET" id="form">
+                    <h1>
+                        Adminlogin
+                    </h1>
+                    <input type="text" name="" placeholder="Enter Username" id="username" required pattern="admin">
+                    <span role="alert" id="nameError" aria-hidden="true"> Enter specified userid.</span>
+                    <input type="password" name="" placeholder="password" id="password" required pattern="12345">
+                    <span role="alert" id="nameError" aria-hidden="true"> Enter specified userid.</span>
+                    <input type="submit" name="" value="login" onclick="validate()">
+                </form> 
+            </div>
+        </div>
+</div>
 </body>
 </html>

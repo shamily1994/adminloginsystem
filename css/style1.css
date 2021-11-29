@@ -1,11 +1,14 @@
 
 body {
     margin: 0;
-    min-width: 250px;
+    /* min-width: 250px; */
     color:black;
-    background: url(../images/index4.jpg);
+    background: url(../images/index4.jpg) no-repeat; 
+    overflow: hidden;
+    width: 100;
+    height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
+   
   }
   #firsthead{
       margin-left: 70px;
@@ -113,7 +116,7 @@ body {
   /* Style the "Add" button */
   .addBtn {
     padding: 10px;
-    width: 20%;
+    width: 27%;
     /* background: #d9d9d9; */
     color: #555;
     /* margin-left: 450px; */
@@ -123,7 +126,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
     border-radius: 200px;
-    color: white;
+    color:white;
     font-weight: bolder;
     font-size: 20px;
   }

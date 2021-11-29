@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,37 +11,21 @@
 
 <body>
     <div class="container">
-        <div id="myDIV" class="header">
-            <!-- <button id="btn" onclick="logout()">Logout</button> -->
-            <span onclick="logout()" id="btn">Logout</span>
-            
-            <h2 id="firsthead">To Do List</h2>
-            <!-- <input type="text" id="myInput" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add</span> -->
-            
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="myDIV" class="header">
+                    <span onclick="logout()" id="btn">Logout</span>
 
-            <ul id="myUL">
-                <span onclick="ajax();" class="addBtn">View My List</span>
-                <!-- Checkbox: <input type="checkbox" id="myCheck" onclick="myFunction()">
-                <p id="text" style="display:none">Checkbox is CHECKED!</p> -->
-            </ul>
+                    <h2 id="firsthead">To Do List</h2>
+                    <ul id="myUL">
+                        <span onclick="ajax();" class="addBtn">My List</span>
+                    </ul>
 
+                </div>
+            </div>
         </div>
+
     </div>
-
-    <!-- 
-        <div id="myDIV" class="header">
-            <h1>TODOLIST</h1>
-            <button onclick="ajax();" class="addBtn">click here</button>
-        </div> -->
-
-    <!-- <ul id="myUL">
-            <button onclick="ajax();" class="addBtn">click here</button>
-        </ul>  -->
-
-
-
-
 
 
     <script src="./js/api.js"></script>
