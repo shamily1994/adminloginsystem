@@ -1,50 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style1.css">
-    <title>DOLIST</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/login.js" defer></script>
+    <title>AdminLoginForm</title>
 </head>
-
 <body>
-    <div class="container">
-        <div id="myDIV" class="header">
-            <!-- <button id="btn" onclick="logout()">Logout</button> -->
-            <span onclick="logout()" id="btn">Logout</span>
-            
-            <h2 id="firsthead">To Do List</h2>
-            <!-- <input type="text" id="myInput" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add</span> -->
-            
-
-            <ul id="myUL">
-                <span onclick="ajax();" class="addBtn">View My List</span>
-                <!-- Checkbox: <input type="checkbox" id="myCheck" onclick="myFunction()">
-                <p id="text" style="display:none">Checkbox is CHECKED!</p> -->
-            </ul>
-
-        </div>
-    </div>
-
-    <!-- 
-        <div id="myDIV" class="header">
-            <h1>TODOLIST</h1>
-            <button onclick="ajax();" class="addBtn">click here</button>
-        </div> -->
-
-    <!-- <ul id="myUL">
-            <button onclick="ajax();" class="addBtn">click here</button>
-        </ul>  -->
-
-
-
-
-
-
-    <script src="./js/api.js"></script>
+  <form action="./index.html" class="box" method="GET" id="form">
+      <h1>
+          Admin-login
+      </h1>
+      <input type="text" name="" placeholder="Enter Username" id="username" required pattern="admin">
+      <!-- <span role="alert" id="nameError" aria-hidden="true"> Enter specified userid.</span> -->
+      <input type="password" name="" placeholder="password" id="password" required pattern="12345">
+      <!-- <span role="alert" id="nameError" aria-hidden="true"> Enter specified userid.</span> -->
+      <input type="submit" name="" value="login" onclick="validate()">
+  </form>  
 </body>
-
 </html>
